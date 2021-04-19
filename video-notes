@@ -1,0 +1,50 @@
+
+---SELECT statement---
+SELECT column_name
+FROM table_name;
+
+
+---WHERE Clause Operators---
+
+SELECT column_name, column_name
+FROM table_name
+WHERE column_name operator value;
+
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE ProductName = 'Tofu';
+
+
+---Get records where the unit price is greater than or equal to 75---
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE UnitPrice >=75
+
+
+--Checking for Non-Matches---
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE Product Name <> 'Alice Mutton'; 
+
+SELECT ProductNAme
+,UnitPrice
+,SupplierID
+,UnitsInStock
+From Products
+WHERE UnitsInStock BETWEEN 15 AND 80;
+
+
+---Filtering No Value---
+SELECT ProductName
+,UnitPrice
+,SupplierID
+,UnitsInStock
+FROM Products
+WHERE ProductName IS NULL;
+
